@@ -119,6 +119,7 @@ while flip!="head":
     print("flipped:",flip)
 '''
 #ex7
+'''
 first=0
 while first<=5:
     second=1
@@ -135,5 +136,74 @@ while i<=5:
     i=i+1
 for i in range (5):
     print(i)
+    '''
+#HOMEWORK
+# ex1
+'''
+number = 1
+while number <= 1000:
+    if number % 3 == 0:
+        print(number)
+    number += 1
+'''
+# ex2
+'''
+print("this program converts inch into cm")
+inch =float(input("enter the inches "))
+while inch >=0:
+      print("your value is {inch*2.54:<.2f}cm.")
+      inch=float(input("enter the inches "))
+print("program ends")
+'''
+# ex3
+'''
+import math
+print("the program will determine the smallest and largest number from the user input")
+mini=float('inf')
+maxi=-float('-inf')
+while True:
+    val=float(input("Enter a number(or an empty string to stop program): "))
+    try:
+        mini=min(mini,float(val))
+        maxi=max(maxi,float(val))
+    except : break
+if mini  == float('inf') or maxi == float('-inf'):  print("no number entered")
+else : print(f'the smallest number is: {mini}and the largest number is: {maxi}')
+'''
+
+# ex4
+'''
+import random as rand
+num=rand.randint(1,10)
+userInput=0
+while True :
+       userInput = int(input("Enter a number between 1 and 10: "))
+if(userInput<num): print("too low")
+elif(userInput>num): print("too high")
+else:
+        print("correct")
+        break
+'''
+# ex5
+'''
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+while (username != 'python' and password != 'rules'):
+      print("access denided")
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+print("welcome")
+'''
+# ex6
+'''
+import random as rand
+insideCircle = 0
+TotalPointsGen = int(input("enter the number of points to generate for pi approximation"))
+for i in range(TotalPointsGen):
+    x=rand.random()
+    y=rand.random()
+    if x*x+y*y<1 : insideCircle+=1
+    print(f'Your pi approximation is: {insideCircle*4/TotalPointsGen:<.10f}')
+'''
 
 
