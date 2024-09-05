@@ -81,6 +81,7 @@ def calculate_sum(numbers):
     return total
  '''
 #ex2
+'''
 def find_largest(numbers):
     for number in numbers:
         if number>largest:
@@ -93,7 +94,9 @@ def find_smallest(numbers):
         if number<smallest:
             smallest=number
             return smallest
+'''
 #ex4
+
 
 
 
