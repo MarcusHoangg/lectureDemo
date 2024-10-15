@@ -151,37 +151,35 @@ while number <= 1000:
 print("this program converts inch into cm")
 inch =float(input("enter the inches "))
 while inch >=0:
-      print("your value is {inch*2.54:<.2f}cm.")
+      print(f"your value is {inch*2.54:<.2f}cm.")
       inch=float(input("enter the inches "))
 print("program ends")
 '''
 # ex3
 '''
-import math
-print("the program will determine the smallest and largest number from the user input")
-mini=float('inf')
-maxi=-float('-inf')
-while True:
-    val=float(input("Enter a number(or an empty string to stop program): "))
+mini = float('inf')
+maxi = float('-inf')
+while True :
+    val = input("Enter a number (or an empty string to stop program): ")
     try:
-        mini=min(mini,float(val))
-        maxi=max(maxi,float(val))
-    except : break
-if mini  == float('inf') or maxi == float('-inf'):  print("no number entered")
-else : print(f'the smallest number is: {mini}and the largest number is: {maxi}')
+        mini = min(mini, float(val))
+        maxi = max(maxi, float(val))
+    except: break
+if mini == float('inf') or maxi == float('-inf') : print("No number was entered.")
+else : print(f"The smallest number is: {mini} and the largest number is: {maxi}")
 '''
 
 # ex4
 '''
 import random as rand
-num=rand.randint(1,10)
-userInput=0
+num = rand.randint(1, 10)
+userInput = 0
 while True :
-       userInput = int(input("Enter a number between 1 and 10: "))
-if(userInput<num): print("too low")
-elif(userInput>num): print("too high")
-else:
-        print("correct")
+    userInput = int(input("Guess the number between 1 and 10: "))
+    if(userInput < num) : print("Too low")
+    elif(userInput > num) : print("Too high")
+    else :
+        print("Correct")
         break
 '''
 # ex5
